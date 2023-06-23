@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "node-sass -w style -o public/style",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build"
+    "start": "docker compose up"
   },
   "author": "",
   "license": "ISC",
