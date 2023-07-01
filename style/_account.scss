@@ -104,7 +104,7 @@
     width: 280px;
   }
   .b-text {
-    color: $c-white;
+    color: black;
     font-size: $fs-xl;
     text-align: left;
     line-height: $fs-xl;
@@ -151,6 +151,7 @@
   }
 
   .login-wraper {
+    margin-top: 800px;
     .login-window {
       position: relative;
       width: auto;
