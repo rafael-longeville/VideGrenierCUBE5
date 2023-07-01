@@ -5,6 +5,3 @@ composer.lock
 
 vendor
 node_modules
-
-public/storage
-```
