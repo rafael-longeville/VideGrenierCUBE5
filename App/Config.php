@@ -11,6 +11,12 @@ class Config
 {
 
     /**
+     * Cookie Configuration
+     */
+    const COOKIE_DEFAULT_EXPIRY = 604800; // 1 week
+    const COOKIE_USER = 'user';
+
+    /**
      * Database host
      * @var string
      */
