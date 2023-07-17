@@ -141,6 +141,9 @@ a.active {
 .head-div {
   border-top: solid 1px #eceff0; }
 
+.v-def {
+  text-align: center; }
+
 .btn-cv1 {
   border-radius: 3px;
   border: solid 1px #ea2c5a;
@@ -802,7 +805,8 @@ video {
 .b-article .v-desc {
   color: #343434;
   font-weight: 500;
-  padding-top: 25px; }
+  padding-top: 25px;
+  text-align: center; }
 
 .b-article .v-views {
   font-size: 15px;
@@ -1097,9 +1101,9 @@ video {
       .single-v-footer-switch > a.active i::before {
         color: #ea2c5a; }
 
-.cb-content {
-  width: 130% !important; }
-
+/*.cb-content {
+    width: 130% !important; // FIX INTERNET EXPLORER ;
+}*/
 /*
 * Content Index END
 */
@@ -1695,7 +1699,6 @@ footer {
         .login-wraper .login-window .l-head {
           background-color: #fbfdfe; } }
     .login-wraper .login-window .l-form {
-      width: 100%;
       text-align: left;
       background-color: #fbfdfe;
       border-bottom-left-radius: 3px;
@@ -1801,38 +1804,6 @@ footer {
     .login-wraper .login-window .l-form {
       padding: 25px 20px; }
 
-@media (max-width: 760px) {
-  .banner-text {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 0;
-    margin-left: 0;
-    width: auto; }
-    .banner-text .line {
-      display: none; }
-    .banner-text .b-text {
-      color: #000000;
-      font-size: 30px;
-      text-align: center;
-      line-height: 30px;
-      padding-top: 30px; }
-    .banner-text .overtext {
-      margin: 15px 0;
-      color: #a1a1a1;
-      text-align: center; }
-  .login-wraper .login-window {
-    position: relative;
-    width: auto;
-    top: 0;
-    left: 0;
-    margin-left: 0;
-    margin-top: 0; }
-    .login-wraper .login-window .l-head {
-      padding: 20px 10px; }
-    .login-wraper .login-window .l-form {
-      padding: 25px 20px; } }
-
 /*
 * Content Account END
 */
@@ -1892,12 +1863,14 @@ footer {
       font-weight: 500; }
   .single-article .h-article .v-desc {
     color: #343434;
-    font-weight: 500; }
+    font-weight: 500;
+    text-align: center; }
   .single-article .h-article .v-views {
     font-size: 15px;
     color: #7e7e7e;
     padding-bottom: 5px;
-    padding-top: 5px; }
+    padding-top: 5px;
+    text-align: center; }
   .single-article .h-article .v-percent {
     color: #28b47e;
     display: inline-block;
