@@ -77,9 +77,7 @@ ul.menu {
     }
   }
 
-  .input-group-addon,
-  .input-group-btn,
-  input {
+  .input-group-addon, .input-group-btn, input {
     width: auto;
     border: none;
     background-color: $c-divider;
@@ -214,8 +212,6 @@ ul.menu {
 }
 
 .loginsignup {
-  display: flex;
-  gap: 1vw;
   text-align: right;
   margin-top: 25px;
   a {
@@ -224,6 +220,7 @@ ul.menu {
       text-decoration: underline;
     }
   }
+
 }
 
 .navbar-brand {
@@ -255,7 +252,7 @@ ul.menu {
   &.single {
     padding: 0;
   }
-  [class^="col-"] {
+  [class^='col-'] {
     @media only screen and(max-width: 767px) {
       position: static;
     }
@@ -284,7 +281,7 @@ ul.menu {
         background-color: $c-white;
         color: $c-green-up;
       }
-      a {
+      a{
         color: $c-white;
         &:hover {
           color: $c-green-up;
@@ -347,6 +344,7 @@ ul.menu {
       left: 8px;
       top: 13px;
     }
+
   }
   .h-grid {
     padding-top: 14px;
@@ -391,9 +389,13 @@ ul.menu {
     height: auto;
     padding-bottom: 6px;
   }
+
+
 }
 
+
 @media (min-width: 100px) and (max-width: 767px) {
+
   .navbar-container {
     height: auto;
     padding-bottom: 15px;
@@ -413,7 +415,10 @@ ul.menu {
     height: auto;
     padding-bottom: 15px;
   }
+
 }
+
+
 
 .mobile-menu {
   position: fixed;
@@ -426,7 +431,7 @@ ul.menu {
   z-index: 100;
   overflow-y: auto;
   @include translate(-100%, 0);
-  @include transition(transform 0.5s);
+  @include transition(transform .5s);
   @media only screen and(min-width: 768px) {
     display: none !important;
   }
@@ -483,7 +488,7 @@ ul.menu {
       width: 70px;
       &::before {
         position: absolute;
-        content: "";
+        content: '';
         display: block;
         width: 14px;
         height: 14px;
@@ -570,6 +575,7 @@ ul.menu {
     }
     & > li {
       &:not(:last-child) a {
+
         border-bottom: solid 1px #eceff0;
       }
       li a {
