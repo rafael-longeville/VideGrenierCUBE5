@@ -1,6 +1,9 @@
 /*
 * General Styles
 */
+#ou {
+  text-align: center; }
+
 body {
   color: #2e2e2e;
   font-family: "Hind Guntur", sans-serif;
@@ -29,7 +32,8 @@ a {
   a:focus {
     color: #ea2c5a; }
 
-.form-control, .btn {
+.form-control,
+.btn {
   font-size: 16px; }
 
 .form-control {
@@ -66,7 +70,8 @@ label {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-.btn:active, .btn.active {
+.btn:active,
+.btn.active {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
@@ -808,7 +813,8 @@ video {
 .b-article .v-views {
   font-size: 15px;
   color: #7e7e7e;
-  padding-top: 5px; }
+  padding-top: 5px;
+  text-align: center; }
   @media only screen and (min-width: 768px) {
     .b-article .v-views {
       padding-bottom: 30px; } }
@@ -924,7 +930,8 @@ video {
   font-size: 15px;
   color: #7e7e7e;
   padding-bottom: 0px;
-  padding-top: 5px; }
+  padding-top: 5px;
+  text-align: center; }
   .b-playlist .v-views .v-percent {
     color: #28b47e;
     display: inline-block;
@@ -1164,9 +1171,7 @@ ul.menu {
     @media only screen and (max-width: 767px) {
       .topsearch .input-group > span {
         margin-left: auto; } }
-  .topsearch .input-group-addon,
-  .topsearch .input-group-btn,
-  .topsearch input {
+  .topsearch .input-group-addon, .topsearch .input-group-btn, .topsearch input {
     width: auto;
     border: none;
     background-color: #eceff0; }
@@ -1275,8 +1280,6 @@ ul.menu {
     margin-left: 5px; }
 
 .loginsignup {
-  display: flex;
-  gap: 1vw;
   text-align: right;
   margin-top: 25px; }
   .loginsignup a {
@@ -1313,7 +1316,7 @@ ul.menu {
   .navbar-container.single {
     padding: 0; }
   @media only screen and (max-width: 767px) {
-    .navbar-container [class^="col-"] {
+    .navbar-container [class^='col-'] {
       position: static; } }
   .navbar-container .input-group input.form-control {
     width: 455px; }
@@ -1504,7 +1507,7 @@ ul.menu {
       width: 70px; }
       .mobile-menu-user-img::before {
         position: absolute;
-        content: "";
+        content: '';
         display: block;
         width: 14px;
         height: 14px;
@@ -1698,6 +1701,7 @@ footer {
         .login-wraper .login-window .l-head {
           background-color: #fbfdfe; } }
     .login-wraper .login-window .l-form {
+      width: 100%;
       text-align: left;
       background-color: #fbfdfe;
       border-bottom-left-radius: 3px;
@@ -1802,6 +1806,38 @@ footer {
       padding: 20px 10px; }
     .login-wraper .login-window .l-form {
       padding: 25px 20px; }
+
+@media (max-width: 760px) {
+  .banner-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    width: auto; }
+    .banner-text .line {
+      display: none; }
+    .banner-text .b-text {
+      color: #000000;
+      font-size: 30px;
+      text-align: center;
+      line-height: 30px;
+      padding-top: 30px; }
+    .banner-text .overtext {
+      margin: 15px 0;
+      color: #a1a1a1;
+      text-align: center; }
+  .login-wraper .login-window {
+    position: relative;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0; }
+    .login-wraper .login-window .l-head {
+      padding: 20px 10px; }
+    .login-wraper .login-window .l-form {
+      padding: 25px 20px; } }
 
 /*
 * Content Account END
@@ -2001,7 +2037,8 @@ footer {
         color: #7e7e7e; }
   .single-article .author .sv-views {
     float: right;
-    width: 200px; }
+    width: 200px;
+    text-align: center; }
     .single-article .author .sv-views .sv-views-count {
       font-size: 20px;
       text-align: right; }
